@@ -126,7 +126,7 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the IP addresses of the 2 webservers as a group and the IP address of the ELK stack under a group called elk
 - Run the playbook, and navigate to ELK stack to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
+ Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? We have to update the host file to specify what playbook ansible should run on which machine.  To specify which machine we wanted to install ELK server on we need to change the host file compared to if we wanted to change where we download filebeat we need to specify that in the filebeat configuration file
 - _Which URL do you navigate to in order to check that the ELK server is running? We would navigate to the ELK stacks public IP address and access it through port 5601. 
