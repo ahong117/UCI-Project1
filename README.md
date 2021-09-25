@@ -63,7 +63,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 - _TODO: What does Metricbeat record? Metricbeat records information as metric data for certain services such as Redis, MySQL, Apache...etc
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
 
 | Name        | Function     | IP address | Operating System |
 |-------------|--------------|------------|------------------|
