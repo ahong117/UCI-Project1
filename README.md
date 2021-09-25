@@ -59,8 +59,8 @@ Load balancing ensures that the application will be highly available, in additio
 -What aspect of security do load balancers protect? What is the advantage of a jump box? A load balancer protects the availability of a webserver by distributing traffic so that it is hard to perform DDOS attacks.  An advantage of using a jumpbox is making a secure computer to have everybody connect to first before accessing our webservers.  
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-- _TODO: What does Filebeat watch for? Filebeat watches out for changes to system logs 
-- _TODO: What does Metricbeat record? Metricbeat records information as metric data for certain services such as Redis, MySQL, Apache...etc
+What does Filebeat watch for? Filebeat watches out for changes to system logs 
+What does Metricbeat record? Metricbeat records information as metric data for certain services such as Redis, MySQL, Apache...etc
 
 The configuration details of each machine may be found below.
 
