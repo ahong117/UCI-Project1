@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-Images/network_diagram.PNG
+![Image of Network Diagram](https://github.com/ahong117/UCI-Project1/blob/31892db63adca7d90b65b41da8ba5cabb156433b/Images/network_diagram.PNG)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration file may be used to install only certain pieces of it, such as Filebeat.
 
