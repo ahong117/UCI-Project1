@@ -20,8 +20,6 @@ These files have been tested and used to generate a live ELK deployment on Azure
     - name: Increase virtual memory
       command: sysctl -w vm.max_map_count=262144
 
-
-
     - name: Install pip
       apt:
         name: python3-pip
