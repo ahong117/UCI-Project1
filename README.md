@@ -94,11 +94,10 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 -The main advantage of configuration with ansible is that it is free and very easy to use and set up a playbook to do whatever we want like creating a webserver
 
 The playbook implements the following tasks:
-- In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- First we needed to install Docker.io on the Ubuntu VM that we created to be our ELK stack
-- Next we had to install python3-pip
-- Next we had to install our Docker python module
-- Last we had to download and launch our docker web container with the image sebp/elk:761 and allow ports 9200, 5601, 5044 open. 
+- Install Docker.io on the Ubuntu VM that we created to be our ELK stack
+- Install python3-pip
+- Install our Docker python module
+- Download and launch our docker web container with the image sebp/elk:761 and allow ports 9200, 5601, 5044 open. 
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -113,7 +112,6 @@ We have installed the following Beats on these machines:
 -Filebeat and Metricbeat
 
 These Beats allow us to collect the following information from each machine:
--In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
 Filebeat collects data on system logs such as server logs or audit logs.  Metricbeat collects statistical data and metrics on our Apache server and any services running on that server.  
 
 ### Using the Playbook
@@ -126,6 +124,6 @@ SSH into the control node and follow the steps below:
 
  Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on? We have to update the host file to specify what playbook ansible should run on which machine.  To specify which machine we wanted to install ELK server on we need to change the host file compared to if we wanted to change where we download filebeat we need to specify that in the filebeat configuration file
-- _Which URL do you navigate to in order to check that the ELK server is running? We would navigate to the ELK stacks public IP address and access it through port 5601. 
+- To specify which machine we wanted to install ELK server on we need to change the host file compared to if we wanted to change where we download filebeat we need to specify that in the filebeat configuration file
+- We would need to navigate to the ELK stacks public IP address and access it through port 5601 to see if our ELK server is running. 
 
