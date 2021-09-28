@@ -21,7 +21,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
--What aspect of security do load balancers protect? What is the advantage of a jump box? A load balancer protects the availability of a webserver by distributing traffic so that it is hard to perform DDOS attacks.  An advantage of using a jumpbox is making a secure computer to have everybody connect to first before accessing our webservers.  
+-A load balancer protects the availability of a webserver by distributing traffic so that it is hard to perform DDOS attacks.  An advantage of using a jumpbox is making a secure computer to have everybody connect to first before accessing our webservers.  
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
 What does Filebeat watch for? Filebeat watches out for changes to system logs 
@@ -56,8 +56,9 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
--The main advantage of configuration with ansible is that it is free and very easy to use and set up a playbook to do whatever we want like creating a webserver
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the main advantage of configuration with ansible is that it is free and very easy to use and set up a playbook to do whatever we want like creating a webserver
+
+I used this [apache-playboo.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/apache-playbook.yml) to create a webserver on two virtual machines
 
 This the ELK configuration file that I ran on my ansible container
 [install-elk.yml](https://github.com/ahong117/UCI-Project1/blob/0b08a98000ae430c9a4e5d6e069ecf32770b5854/Ansible/install-elk.yml)
@@ -79,6 +80,12 @@ This ELK server is configured to monitor the following machines:
 
 We have installed the following Beats on these machines:
 -Filebeat and Metricbeat
+
+Here is a list of my filebeat and metricbeat configuration files and the playbook files used to install these programs on my ELK stack
+[filebeat-playbook.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-playbook.yml)
+[filebeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-config.yml)
+[metricbeat-playbook.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-playbook.yml)
+[metricbeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-config.yml)
 
 These Beats allow us to collect the following information from each machine:
 Filebeat collects data on system logs such as server logs or audit logs.  Metricbeat collects statistical data and metrics on our Apache server and any services running on that server.  
