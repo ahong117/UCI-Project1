@@ -58,7 +58,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because the main advantage of configuration with ansible is that it is free and very easy to use and set up a playbook to do whatever we want like creating a webserver
 
-I used this [apache-playboo.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/apache-playbook.yml) to create a webserver on two virtual machines
+I used this [apache-playboo.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/apache-playbook.yml) to create a webserver on two virtual machines to set up the environment for my ELK stack.
 
 This the ELK configuration file that I ran on my ansible container
 [install-elk.yml](https://github.com/ahong117/UCI-Project1/blob/0b08a98000ae430c9a4e5d6e069ecf32770b5854/Ansible/install-elk.yml)
@@ -82,10 +82,10 @@ We have installed the following Beats on these machines:
 -Filebeat and Metricbeat
 
 Here is a list of my filebeat and metricbeat configuration files and the playbook files used to install these programs on my ELK stack
-[filebeat-playbook.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-playbook.yml)
-[filebeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-config.yml)
-[metricbeat-playbook.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-playbook.yml)
-[metricbeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-config.yml)
+-[filebeat-playbook.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-playbook.yml)
+-[filebeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-config.yml)
+-[metricbeat-playbook.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-playbook.yml)
+-[metricbeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-config.yml)
 
 These Beats allow us to collect the following information from each machine:
 Filebeat collects data on system logs such as server logs or audit logs.  Metricbeat collects statistical data and metrics on our Apache server and any services running on that server.  
