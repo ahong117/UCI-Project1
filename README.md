@@ -58,6 +58,8 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 -The main advantage of configuration with ansible is that it is free and very easy to use and set up a playbook to do whatever we want like creating a webserver
+This the ELK configuration file that I ran on my ansible container
+[A link](https://github.com/ahong117/UCI-Project1/blob/0b08a98000ae430c9a4e5d6e069ecf32770b5854/Ansible/install-elk.yml)
 
 The playbook implements the following tasks:
 - Install Docker.io on the Ubuntu VM that we created to be our ELK stack
