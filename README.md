@@ -85,11 +85,11 @@ Here is a list of my filebeat and metricbeat configuration files and the playboo
 
 -[filebeat-playbook.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-playbook.yml)
 
--[filebeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-config.yml)
+-[filebeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/filebeat-config.yml) (You must change line 1105 and 1805 to include the private IP address of your ELK stack)
 
 -[metricbeat-playbook.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-playbook.yml)
 
--[metricbeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-config.yml)
+-[metricbeat-config.yml](https://github.com/ahong117/UCI-Project1/blob/55166459cac1ffb5dc8b3e98007638149885ecf6/Ansible/metricbeat-config.yml) (You must change line 62 and 85 to include the private IP address of your ELK stack)
 
 These Beats allow us to collect the following information from each machine:
 Filebeat collects data on system logs such as server logs or audit logs.  Metricbeat collects statistical data and metrics on our Apache server and any services running on that server.  
