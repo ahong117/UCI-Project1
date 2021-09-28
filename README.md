@@ -98,7 +98,7 @@ Filebeat collects data on system logs such as server logs or audit logs.  Metric
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the filebeat-playbook.yml file to ansible container.
+- Copy the filebeat-playbook.yml, filebeat-config.yml, metricbeat-playbook.yml, and the metricbeat-config.yml file to ansible container.
 - Update the hosts file to include the IP addresses of the 2 webservers as a group and the IP address of the ELK stack under a group called elk
-- Run the playbook, and navigate to the ELK stacks public IP address and access it through port 5601 to see if our ELK server is running. 
+- Run the playbook, and navigate to the ELK stacks public IP address and access it through port 5601 to see if our ELK server is running. The format of the url to check if the ELK stack is running would be http:[public IP address of the ELK stack]:5601/kibana/apps
 
