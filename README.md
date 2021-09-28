@@ -24,8 +24,7 @@ Load balancing ensures that the application will be highly available, in additio
 -A load balancer protects the availability of a webserver by distributing traffic so that it is hard to perform DDOS attacks.  An advantage of using a jumpbox is making a secure computer to have everybody connect to first before accessing our webservers.  
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the data and system logs.
-What does Filebeat watch for? Filebeat watches out for changes to system logs 
-What does Metricbeat record? Metricbeat records information as metric data for certain services such as Redis, MySQL, Apache...etc
+Filebeat watches out for changes to system logs while Metricbeat records information as metric data for certain services such as Redis, MySQL, Apache...etc
 
 The configuration details of each machine may be found below.
 
